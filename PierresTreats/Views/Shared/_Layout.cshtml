@@ -12,6 +12,7 @@
   </head>
   <body>
     @RenderBody()
+    @await Html.PartialAsync("NavLinks")
     @await Html.PartialAsync("Footer")
   </body>
 </html>
