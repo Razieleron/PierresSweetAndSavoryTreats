@@ -23,4 +23,11 @@ namespace PierresTreats.Controllers
       return View(_db.Recipes.ToList());
     }
   }
+
+  public ActionResult Create()
+  {
+    return View ();
+  }
+
+  
 }
