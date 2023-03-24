@@ -2,22 +2,22 @@
   Layout = "_Layout";
 }
 @using PierresTreats.Models
-@model PierresTreats.Models.Treat
+@model PierresTreats.Models.Flavor
 
-<h2>Treat Details</h2>
+<h2>Flavor Details</h2>
 <hr />
-<h3>Treat Name: @Html.DisplayFor(model => model.TreatName)</h3>
+<h3>Flavor Name: @Html.DisplayFor(model => model.FlavorName)</h3>
 
 @if(@Model.JoinEntities.Count == 0)
 {
-  <p>This treat has no associated flavors yet!</p>
+  <p>This flavor has no associated treats yet!</p>
 }
 else
-{<p>This meal has the flavors of:</p>
+{<p>This flavor has the following associated treats:</p>
   <ul>
     @foreach (FlavorTreat fish in Model.JoinEntities)
     {
-      <li>  @fish.Flavor.FlavorName</li>
+      <li>  @fish.Treat.TreatName</li>
       @using (Html.BeginForm("DeleteFish", "Flavors"))
       {
         @Html.Hidden("FishId", fish.FlavorTreatId)
@@ -29,6 +29,6 @@ else
 
 
 
-@Html.ActionLink("Edit this Treat", "Edit", "Treats", new {id = Model.TreatId})
-@Html.ActionLink("Add a Flavor", "AddFlavor", "Treats", new {id = Model.TreatId})
+@Html.ActionLink("Edit this Flavor", "Edit", "Flavors", new {id = Model.FlavorId})
+@Html.ActionLink("Add a Treat", "AddTreat", "Flavors", new {id = Model.FlavorId})
   </a>
