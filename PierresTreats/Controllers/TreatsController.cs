@@ -62,7 +62,7 @@ namespace PierresTreats.Controllers
 
 
 
-          public ActionResult Delete(int id)
+    public ActionResult Delete(int id)
     {
       Treat thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
       return View(thisTreat);
