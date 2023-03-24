@@ -11,14 +11,14 @@ An application with user authentication and a many-to-many database relationship
 * CSS
 * Visual Studio
 * .Net Framework
-* Razor Framework
+* Razor Markup
 * SQL
 
 ## Setup Instructions
 
 1. Clone this repository.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "HairSalon.Solution/HairSalon".
-3. Create a file in /HairSalon called appsettings.json.  In this file, place the following text:
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "PierresTreats.Solution/PierresTreats".
+3. Create a file in /PierresTreats called appsettings.json.  In this file, place the following text:
 
 {
   "ConnectionStrings": {
@@ -45,3 +45,4 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 * Copyright (c) _2023_ _Jannon Sielaff_
+touch 

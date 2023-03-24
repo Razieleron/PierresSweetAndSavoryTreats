@@ -1,3 +1,17 @@
 @{
   Layout = "_Layout";
 }
+
+@using PierresTreats.Models;
+
+<h2> Flavor List </h2>
+
+@if(Model.Count == 0)
+{
+  <h3>No Flavors Yet!</h3>
+}
+
+@foreach (Flavor flavor in Model)
+{
+  <p>@Html.ActionLink($"{flavor.FlavorName}", "Details", new {id = flavor.FlavorId})</p>
+}
