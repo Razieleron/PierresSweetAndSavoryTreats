@@ -8,4 +8,4 @@ namespace PierresTreats.Models
     public string TreatName { get; set; }
     public List<FlavorTreat> JoinEntities { get; set; } 
   }
-}
+} 
