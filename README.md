@@ -26,9 +26,8 @@ An application with user authentication and a many-to-many database relationship
   }
 }
 
+4. In the command line, run the command "dotnet build" to compile the code. After you have compiled the code and injected all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will open a web browser to LocalHost:5000 or Localhost:5001.  From here you can interact with the application. Since this is a web application, you will interact with it in your web browser.
 
-4. In the command line, run the command "dotnet run" to compile and execute the console application. After you have built/run all of your dependencies, you can publish the application to the internet by typing dotnet watch run.  This will open a web browser to LocalHost:5000 or Localhost:5001.  From here you can interact with the application. Since this is a web application, you will interact with it in your web browser.
-5. Optionally, you can run "dotnet build" to compile this console app without running it.
 
 ## Known Bugs
 
@@ -45,4 +44,3 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 * Copyright (c) _2023_ _Jannon Sielaff_
-touch 
