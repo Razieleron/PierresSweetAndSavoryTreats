@@ -19,18 +19,15 @@
   @Html.LabelFor(user => user.Email)
   @Html.TextBoxFor(user=> user.Email)
 
-  @* @Html.LabelFor(user => user.DisplayName)
-  @Html.TextBoxFor(user=> user.DisplayName) *@
-
   @Html.LabelFor(user=> user.Password)
   @Html.EditorFor(user=> user.Password)
 
   @Html.LabelFor(user=> user.ConfirmPassword)
   @Html.EditorFor(user=> user.ConfirmPassword)
 
-  <input type="submit" class="button" value="Register" />
+  <input type="submit" value="Register" />
 }
 <br>
 <a href='@Url.Action("Index")'>
-  <button type="button" class="button">Back</button>
+  <button type="button">Back</button>
 </a>

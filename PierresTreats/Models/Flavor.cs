@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace PierresTreats.Models
 {
@@ -7,5 +9,6 @@ namespace PierresTreats.Models
     public int FlavorId { get; set; }
     public string FlavorName { get; set; }
     public List<FlavorTreat> JoinEntities { get; set; }
+    public ApplicationUser UserManager { get; set; }
   }
 }
