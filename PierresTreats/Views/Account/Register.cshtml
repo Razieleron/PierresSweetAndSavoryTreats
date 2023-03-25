@@ -6,12 +6,12 @@
 
 @model RegisterViewModel
 
-<h1>Register an account</h1>
+<h2>Register a new user</h2>
 <hr />
 
-@if (!ViewData.ModelState.IsValid)
+@if(!ViewData.ModelState.IsValid) 
 {
-  @Html.ValidationSummary("Please fix the following error(s) and then resubmit the form:")
+  @Html.ValidationSummary("Please fix the following error(s) and then resubmit the form:") 
 }
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post))
@@ -27,7 +27,5 @@
 
   <input type="submit" value="Register" />
 }
-<br>
-<a href='@Url.Action("Index")'>
-  <button type="button">Back</button>
-</a>
+
+<p>@Html.ActionLink("Back to accounts page", "Index")</p>

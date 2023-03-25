@@ -14,7 +14,7 @@ using PierresTreats.Models;
 
 namespace PierresTreats.Controllers
 {
-      [Authorize]
+[Authorize]
   public class FlavorsController : Controller
   {
     private readonly PierresTreatsContext _db;
@@ -24,7 +24,7 @@ namespace PierresTreats.Controllers
       _userManager = userManager;
       _db = db;
     }
-    
+    [AllowAnonymous]
     public ActionResult Index()
     {
       return View(_db.Flavors.ToList());

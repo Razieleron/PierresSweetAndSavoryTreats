@@ -25,7 +25,7 @@ namespace PierresTreats.Controllers
       _userManager = userManager;
       _db = db;
     }
-
+    [AllowAnonymous]
     public ActionResult Index()
     {
       return View(_db.Treats.ToList());

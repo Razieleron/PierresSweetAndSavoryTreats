@@ -1,3 +1,29 @@
 @{
   Layout = "_Layout";
 }
+@using PierresTreats.Models;
+Treats:<br>
+  @if (ViewBag.treats.Count == 0)
+  {
+    <p>Sorry there aren't any treats yet</p>
+  }
+  @foreach (Treat treat in ViewBag.treats)
+  {
+        <a href="/treat/details/@treat.TreatId">@treat.TreatName</a>
+    <br>
+  }
+</div>
+<br><br>
+Flavors:<br>
+  @if (ViewBag.flavors.Count == 0)
+  {
+    <p>Sorry there aren't any flavors yet</p>
+  }
+  @foreach (Flavor flavor in ViewBag.flavors)
+  {
+        <a href="/flavor/details/@flavor.FlavorId">@flavor.FlavorName</a>
+    <br>
+  }
+  <br><br>
+</div>
+</div>

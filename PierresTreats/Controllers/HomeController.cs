@@ -23,25 +23,11 @@ namespace PierresTreats.Controllers
       }
 
       [HttpGet("/")]
-      public async Task<ActionResult> Index()
+      public ActionResult Index()
       {
-        // are we missing something here?  the lesson has:
-        /*
-        Category[] cats = _db.Categories.ToArray();
-        */
-      Dictionary<string, object[]> model = new Dictionary<string, object[]>();
-      
-      //Recipe logic
-      string userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-      ApplicationUser currentUser = await _userManager.FindByIdAsync(userId);
-      if (currentUser != null)
-      {
-        Treat[] treats = _db.Treats
-                        .Where(entry => entry.User.Id == currentUser.Id)
-                        .ToArray();
-        model.Add("treats", treats);
-      }
-      return View(model);
+        ViewBag.treats = _db.Treats.ToList();
+        ViewBag.flavors = _db.Flavors.ToList();
+      return View();
       }
 
       

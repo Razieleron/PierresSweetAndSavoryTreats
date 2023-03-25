@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-
+@using PierresTreats.Models
 <hr />
 @if (User.Identity.IsAuthenticated)
 {
@@ -12,6 +12,7 @@
     <input type="submit" class="button" value="Log out" />
   }
 }
+
 else
 {
   <a href='@Url.Action("Register")'>
